@@ -19,6 +19,13 @@ body {
   height: 50vh;
 }
 
+.list-arrow li::before{
+  content: "⮞"
+}
+.list-arrow li{
+  list-style-type: none;
+}
+
 
 $family-sans-serif: 'Merriweather', serif;
 $body-background-color: #EAEAEA;
@@ -32,6 +39,7 @@ $link-hover: $primary;
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
@@ -39,6 +47,7 @@ $link-hover: $primary;
 @import "../node_modules/bulma/sass/components/breadcrumb.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
 
 @include widescreen {
   body {
